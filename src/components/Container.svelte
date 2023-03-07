@@ -1,0 +1,24 @@
+<script lang="ts">
+	export let variant: 'regular' = 'regular';
+</script>
+
+<div class={variant}>
+	<slot />
+</div>
+
+<style lang="scss">
+	div {
+		margin: 0 auto;
+		padding: 0 24px;
+		box-sizing: content-box;
+
+		//Up to phone landscape - up to 767px
+		@include down('md') {
+			padding: 0 12px;
+		}
+
+		&.regular {
+			max-width: 1380px;
+		}
+	}
+</style>

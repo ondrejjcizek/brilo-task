@@ -1,9 +1,18 @@
-<h1>Jack Jackson</h1>
-<p>
-	What a bounder joseph stalin groomed sportacus testosterone trophy freestyle derek griffiths robot
-	moustache derek griffiths groomed testosterone trophy marquess of queensbury freestyle joseph
-	stalin robot moustache Nostrilis tickler sportacus what a bounder groomed?
-</p>
+<script lang="ts">
+	import Container from '../components/Container.svelte';
+	import Section from '../components/Section.svelte';
+</script>
+
+<Section variant="regular" appended>
+	<Container>
+		<h1>Jack Jackson</h1>
+		<p>
+			What a bounder joseph stalin groomed sportacus testosterone trophy freestyle derek griffiths
+			robot moustache derek griffiths groomed testosterone trophy marquess of queensbury freestyle
+			joseph stalin robot moustache Nostrilis tickler sportacus what a bounder groomed?
+		</p>
+	</Container>
+</Section>
 
 <svelte:head>
 	<title>Brilo Task</title>
