@@ -20,7 +20,7 @@
 
 <style lang="scss">
 	h1 {
-		color: $blue;
+		color: blue;
 		font-size: 3.2rem;
 	}
 
