@@ -8,6 +8,8 @@
 
 <style lang="scss">
 	div {
+		position: relative;
+		height: 100%;
 		margin: 0 auto;
 		padding: 0 24px;
 		box-sizing: content-box;

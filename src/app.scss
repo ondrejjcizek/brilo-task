@@ -1,16 +1,19 @@
-@import 'scss/mixins/_breakpoints.scss';
 @import 'scss/normalize.scss';
 @import 'scss/fonts.scss';
-@import 'scss/variables.scss';
 
-:global(html) {
+html {
 	font-size: 62.5%;
 }
 
-:global(body) {
+body {
 	font-family: 'Carmen', sans;
 }
 
-:global(h1, h2, h3, h4, h5, h6) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Madera', sans;
 }

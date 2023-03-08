@@ -25,6 +25,10 @@
 		width: 30px;
 		cursor: pointer;
 
+		@include up('sm') {
+			display: none;
+		}
+
 		&-stick {
 			position: absolute;
 			display: block;
@@ -44,10 +48,6 @@
 
 			&:nth-child(3) {
 				bottom: 0;
-			}
-
-			@include up('sm') {
-				display: none;
 			}
 		}
 

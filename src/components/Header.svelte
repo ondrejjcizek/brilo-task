@@ -2,7 +2,7 @@
 	import { clickOutside } from '../actions/ClickOutside';
 	import Container from './Container.svelte';
 	import Hamburger from './Hamburger.svelte';
-	let isMenuShowing: boolean = true;
+	let isMenuShowing: boolean = false;
 </script>
 
 <header>
