@@ -58,7 +58,7 @@
 				display: block;
 				position: absolute;
 				inset: 0;
-				padding-bottom: percentage(220/345.34);
+				padding-bottom: calc(220 / 345.34 * 100%);
 				height: 100%;
 				width: 100%;
 			}

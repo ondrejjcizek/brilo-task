@@ -17,7 +17,7 @@
 					queensbury freestyle joseph stalin robot moustache Nostrilis tickler sportacus what a
 					bounder groomed?
 				</Text>
-				<Button tag="a" href="#todo">Learn More</Button>
+				<Button tag="a" href="#">Learn More</Button>
 			</div>
 			<div class="Hero-image">
 				<img
@@ -37,7 +37,7 @@
 		justify-content: space-between;
 		gap: 24px;
 
-		@include down('sm') {
+		@include down('md') {
 			flex-direction: column-reverse;
 		}
 
@@ -53,8 +53,8 @@
 				margin-top: 0;
 			}
 
-			@include down('sm') {
-				margin-top: -80px;
+			@include down('md') {
+				margin: -80px auto 0;
 				text-align: center;
 
 				:global(h1) {
@@ -78,15 +78,17 @@
 
 		&-image {
 			position: relative;
+			height: 422.5px;
+			width: 100%;
+			min-width: 315px;
+			max-width: 315px;
 			img {
+				position: absolute;
+				inset: 0;
 				filter: saturate(0.65) opacity(0.75);
 				object-fit: cover;
 				height: 100%;
-				min-width: 100%;
-
-				@include down('md') {
-					max-width: 250px;
-				}
+				width: 100%;
 			}
 
 			&:after {
@@ -94,12 +96,12 @@
 				display: block;
 				position: absolute;
 				inset: 0;
-				padding-bottom: percentage(422.5/315);
+				padding-bottom: calc(422.5 / 315 * 100%);
 				height: 100%;
 				width: 100%;
 			}
 
-			@include down('sm') {
+			@include down('md') {
 				margin: 0 auto;
 			}
 		}

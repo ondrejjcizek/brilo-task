@@ -14,9 +14,9 @@
 				}}
 				class:active={isMenuShowing}
 			>
-				<li><a href="#todo">HOME</a></li>
-				<li><a href="#todo">ABOUT ME</a></li>
-				<li><a href="#todo">MY WORK</a></li>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT ME</a></li>
+				<li><a href="#">MY WORK</a></li>
 			</ul>
 			<Hamburger bind:isMenuShowing />
 		</nav>

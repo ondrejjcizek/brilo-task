@@ -11,21 +11,21 @@
 		<Title tag="h2" size="sm" uppercase>What I did</Title>
 		<CardWrapper>
 			<Card
-				link="#todo"
+				link="#"
 				title="Epic Project"
 				text="Awesome project I did in 2018. It was big experience for me."
 				imageSrc="images/project-first"
 				imageAlt="First Project"
 			/>
 			<Card
-				link="#todo"
+				link="#"
 				title="Another work I did"
 				text="Awesome project I did in 2018. It was big experience for me."
 				imageSrc="images/project-second"
 				imageAlt="Second Project"
 			/>
 			<Card
-				link="#todo"
+				link="#"
 				title="Rebrand of this company"
 				text="Awesome project I did in 2018. It was big experience for me."
 				imageSrc="images/project-third"
