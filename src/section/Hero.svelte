@@ -49,7 +49,7 @@
 			}
 
 			@include down('sm') {
-				margin-top: -70px;
+				margin-top: -80px;
 				text-align: center;
 
 				:global(h1) {
@@ -60,7 +60,7 @@
 					text-align: center;
 					max-width: 250px;
 					margin: 0 auto 40px;
-					background: rgba(white, 0.3);
+					background: rgba(white, 0.35);
 				}
 
 				:global(p) {

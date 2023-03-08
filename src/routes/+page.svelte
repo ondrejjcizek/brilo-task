@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from '../section/Hero.svelte';
+	import Portofolio from '../section/Portofolio.svelte';
 </script>
 
 <svelte:head>
@@ -7,3 +8,4 @@
 </svelte:head>
 
 <Hero />
+<Portofolio />

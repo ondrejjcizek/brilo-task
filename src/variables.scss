@@ -3,27 +3,32 @@
 :root {
 	// Colors
 	--text-color: #000;
-	--title-color: #000;
+	--title-color: rgb(0, 0, 0, 0.7);
 
 	// Background
 	--primary-bg: #ccc;
 
 	// Buttons
 	--primary-btn-color: black;
-	--primary-btn-bg: #3697a7;
-	--primary-btn-bg-hover: rgb(54, 151, 167, 0.7);
+	--primary-btn-bg: #9c9c9c;
+	--primary-btn-bg-hover: rgba(156, 156, 156, 0.7);
 
 	// Header
 	--header-bg: #9c9c9c;
 	--link-color: rgb(0, 0, 0, 0.7);
 	--link-hover-color: black;
+
+	//Card
+	--card-bg: #9c9c9c;
+	--card-title-color: rgb(0, 0, 0, 0.6);
+	--card-text-color: rgb(0, 0, 0, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		// Colors
 		--text-color: #fff;
-		--title-color: #fff;
+		--title-color: rgb(255, 255, 255, 0.7);
 		--header-bg: #1f464d;
 
 		// Background
@@ -38,5 +43,10 @@
 		--header-bg: #1f464d;
 		--link-color: rgb(255, 255, 255, 0.7);
 		--link-hover-color: white;
+
+		//Card
+		--card-bg: #3697a7;
+		--card-title-color: rgb(255, 255, 255);
+		--card-text-color: rgb(255, 255, 255, 0.7);
 	}
 }

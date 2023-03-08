@@ -3,28 +3,63 @@
 	export let size: 'xs' | 'sm' | 'md' = 'md';
 	export let weight: 'regular' | 'bold' = 'regular';
 	export let align: 'center' | 'left' | 'right' = 'left';
+	export let fontFamily: 'madera' | 'carmen' = 'madera';
 	export let uppercase: boolean = false;
 	export let block: boolean = false;
 </script>
 
-<svelte:element this={tag} class={`Title ${size} ${weight} ${align}`} class:uppercase class:block>
+<svelte:element
+	this={tag}
+	class={`Title ${size} ${weight} ${align} ${fontFamily}`}
+	class:uppercase
+	class:block
+>
 	<slot />
 </svelte:element>
 
 <style lang="scss">
 	.Title {
 		margin: 0;
-		font-family: 'Madera', sans;
 		color: var(--title-color);
 	}
 
 	// Sizes
 
-	.md {
-		font-size: 4rem;
-		margin-bottom: 40px;
+	.xs {
+		font-size: 2.1rem;
+		margin-bottom: 24px;
+
+		@include down('lg') {
+			font-size: 1.8rem;
+		}
+
 		@include down('md') {
-			font-size: 2.7rem;
+			font-size: 1.7rem;
+			margin-bottom: 16px;
+		}
+
+		@include down('sm') {
+			margin-bottom: 12px;
+			font-size: 1.6rem;
+		}
+	}
+
+	.sm {
+		font-size: 2.8rem;
+		margin-bottom: 24px;
+
+		@include down('md') {
+			font-size: 2rem;
+		}
+	}
+
+	.md {
+		font-size: 4.5rem;
+		line-height: 45px;
+		margin-bottom: 40px;
+
+		@include down('md') {
+			font-size: 3rem;
 		}
 	}
 
@@ -60,5 +95,15 @@
 
 	.uppercase {
 		text-transform: uppercase;
+	}
+
+	// Font Family
+
+	.madera {
+		font-family: 'Madera', sans;
+	}
+
+	.carmen {
+		font-family: 'Carmen', sans;
 	}
 </style>

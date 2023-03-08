@@ -11,18 +11,18 @@
 <style lang="scss">
 	section {
 		&.regular {
-			padding: 90px 0;
+			padding: 80px 0;
 		}
 
 		@include up('md') {
 			&.regular {
-				padding: 180px 0;
+				padding: 160px 0;
 			}
 		}
 
 		@include up('lg') {
 			&.regular {
-				padding: 270px 0;
+				padding: 240px 0;
 			}
 		}
 

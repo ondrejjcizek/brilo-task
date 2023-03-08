@@ -32,6 +32,15 @@
 
 	// Sizes
 
+	.sm {
+		font-size: 1.6rem;
+		line-height: (24/18);
+
+		@include down('sm') {
+			font-size: 1.5rem;
+		}
+	}
+
 	.md {
 		font-size: 1.7rem;
 		line-height: (24/18);

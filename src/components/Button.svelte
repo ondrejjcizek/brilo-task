@@ -1,13 +1,12 @@
 <script lang="ts">
 	export let tag: 'button' | 'a' = 'button';
 	export let variant: 'primary' | 'secondary' | 'disabled' = 'primary';
-	export let size: 'small' | 'normal' | 'wide' = 'normal';
 	export let onClick: ((event: MouseEvent) => void) | undefined = undefined;
 </script>
 
 <svelte:element
 	this={tag}
-	class={`Button ${variant} ${size}`}
+	class={`Button ${variant}`}
 	{...$$restProps}
 	on:click|preventDefault={onClick}
 >
@@ -22,13 +21,14 @@
 		justify-content: center;
 		align-items: center;
 		font-weight: 600;
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 		gap: 12px;
 		cursor: pointer;
 		text-transform: uppercase;
 		width: 100%;
 		max-width: 265px;
 		line-height: 13px;
+		font-weight: 300;
 		text-transform: uppercase;
 		padding: 10px;
 		transition: ease color 0.3s, ease background 0.3s;
