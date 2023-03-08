@@ -4,4 +4,14 @@
 </script>
 
 <Header />
-<slot />
+
+<main>
+	<slot />
+</main>
+
+<style lang="scss">
+	main {
+		background: var(--primary-bg);
+		height: 100%;
+	}
+</style>

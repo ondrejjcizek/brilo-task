@@ -1,4 +1,42 @@
 @import 'scss/mixins/_breakpoints.scss';
 
-$white: #fff;
-$header-bg: #1f464d;
+:root {
+	// Colors
+	--text-color: #000;
+	--title-color: #000;
+
+	// Background
+	--primary-bg: #ccc;
+
+	// Buttons
+	--primary-btn-color: black;
+	--primary-btn-bg: #3697a7;
+	--primary-btn-bg-hover: rgb(54, 151, 167, 0.7);
+
+	// Header
+	--header-bg: #9c9c9c;
+	--link-color: rgb(0, 0, 0, 0.7);
+	--link-hover-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		// Colors
+		--text-color: #fff;
+		--title-color: #fff;
+		--header-bg: #1f464d;
+
+		// Background
+		--primary-bg: #333333;
+
+		// Buttons
+		--primary-btn-color: white;
+		--primary-btn-bg: #3697a7;
+		--primary-btn-bg-hover: rgb(54, 151, 167, 0.7);
+
+		// Header
+		--header-bg: #1f464d;
+		--link-color: rgb(255, 255, 255, 0.7);
+		--link-hover-color: white;
+	}
+}

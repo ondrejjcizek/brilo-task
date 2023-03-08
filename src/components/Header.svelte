@@ -26,7 +26,7 @@
 <style lang="scss">
 	header {
 		position: relative;
-		background: $header-bg;
+		background: var(--header-bg);
 		height: 72px;
 	}
 
@@ -38,6 +38,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		height: 100%;
+		z-index: 1;
 	}
 
 	ul {
@@ -55,7 +56,7 @@
 		@include down('sm') {
 			display: flex;
 			position: absolute;
-			background: $header-bg;
+			background: var(--header-bg);
 			right: -2px;
 			gap: 24px;
 			top: 90px;
@@ -85,7 +86,7 @@
 		display: flex;
 		align-items: center;
 		text-decoration-color: transparent;
-		color: rgba($white, 0.7);
+		color: var(--link-color);
 		font-family: 'Madera', sans;
 		letter-spacing: 3px;
 		padding: 0 12px;
@@ -93,11 +94,19 @@
 		transition: ease color 0.3s, ease text-decoration 0.3s;
 		text-underline-offset: 8px;
 
+		@include down('sm') {
+			text-decoration: none;
+		}
+
 		&:hover {
-			color: $white;
+			color: var(--link-hover-color);
 			text-decoration-thickness: 0.75px;
-			text-decoration-color: $white;
+			text-decoration-color: var(--text-color);
 			text-underline-offset: 8px;
+
+			@include down('sm') {
+				text-decoration: none;
+			}
 		}
 	}
 </style>

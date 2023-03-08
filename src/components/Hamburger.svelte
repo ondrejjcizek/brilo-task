@@ -34,7 +34,7 @@
 			display: block;
 			height: 2px;
 			width: 30px;
-			background: $white;
+			background: var(--link-color);
 			transition: ease opacity 0.2s, ease transform 0.3s;
 
 			&:nth-child(1) {
