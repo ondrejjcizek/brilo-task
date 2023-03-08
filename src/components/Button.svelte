@@ -32,6 +32,7 @@
 		text-transform: uppercase;
 		padding: 10px;
 		transition: ease color 0.3s, ease background 0.3s;
+		text-decoration: none;
 
 		&-wrapper {
 			position: relative;
