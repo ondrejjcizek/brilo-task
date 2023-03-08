@@ -34,22 +34,23 @@
 		}
 
 		@include down('md') {
-			font-size: 1.7rem;
+			font-size: 1.8rem;
 			margin-bottom: 16px;
 		}
 
 		@include down('sm') {
 			margin-bottom: 12px;
-			font-size: 1.6rem;
 		}
 	}
 
 	.sm {
 		font-size: 2.8rem;
 		margin-bottom: 24px;
+		line-height: 28px;
 
 		@include down('md') {
-			font-size: 2rem;
+			font-size: 2.4rem;
+			line-height: 24px;
 		}
 	}
 
@@ -100,10 +101,10 @@
 	// Font Family
 
 	.madera {
-		font-family: 'Madera', sans;
+		font-family: 'Madera', sans-serif;
 	}
 
 	.carmen {
-		font-family: 'Carmen', sans;
+		font-family: 'Carmen', sans-serif;
 	}
 </style>

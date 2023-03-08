@@ -18,6 +18,7 @@
 
 		@include down('sm') {
 			grid-template-columns: repeat(1, 1fr);
+			gap: 24px;
 		}
 	}
 </style>

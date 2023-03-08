@@ -20,7 +20,12 @@
 				<Button tag="a" href="#todo">Learn More</Button>
 			</div>
 			<div class="Hero-image">
-				<img src="images/profile-photo.jpg" srcset="images/profile-photo@2x.jpg 2x" alt="" />
+				<img
+					src="images/profile-photo.jpg"
+					srcset="images/profile-photo@2x.jpg 2x"
+					alt="Jack Jackson"
+					loading="lazy"
+				/>
 			</div>
 		</div>
 	</Container>
@@ -72,13 +77,26 @@
 		}
 
 		&-image {
+			position: relative;
 			img {
-				aspect-ratio: 3/4;
 				filter: saturate(0.65) opacity(0.75);
+				object-fit: cover;
+				height: 100%;
+				min-width: 100%;
 
 				@include down('md') {
 					max-width: 250px;
 				}
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				inset: 0;
+				padding-bottom: percentage(422.5/315);
+				height: 100%;
+				width: 100%;
 			}
 
 			@include down('sm') {

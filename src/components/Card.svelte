@@ -11,7 +11,14 @@
 <a href={link} class="Card">
 	<article>
 		<div class="Card-image">
-			<img src={`${imageSrc}.jpg`} srcset={`${imageSrc}@2x.jpg`} alt={imageAlt} />
+			<img
+				src={`${imageSrc}.jpg`}
+				srcset={`${imageSrc}@2x.jpg`}
+				alt={imageAlt}
+				loading="lazy"
+				height="220"
+				width="345"
+			/>
 		</div>
 		<div class="Card-content">
 			<Title tag="h3" size="xs" fontFamily="carmen" uppercase>{title}</Title>
@@ -46,10 +53,20 @@
 		&-image {
 			position: relative;
 
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				inset: 0;
+				padding-bottom: percentage(220/345.34);
+				height: 100%;
+				width: 100%;
+			}
+
 			&:after {
 				position: absolute;
 				inset: 0;
-				top: -3px;
+				top: -4px;
 				content: '';
 				display: block;
 				border: 0.5px solid rgba(white, 0.5);
@@ -58,8 +75,9 @@
 
 			img {
 				width: 100%;
+				height: 100%;
 				opacity: 0.8;
-				aspect-ratio: 173/110;
+				object-fit: cover;
 				transition: ease opacity 0.3s;
 			}
 		}

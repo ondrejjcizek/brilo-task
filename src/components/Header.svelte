@@ -52,18 +52,19 @@
 		padding-left: 0;
 		height: 72px;
 		transition: ease transform 0.3s;
+		overflow: hidden;
 
 		@include down('sm') {
 			display: flex;
 			position: absolute;
 			background: var(--header-bg);
 			right: -2px;
-			gap: 24px;
+			gap: 40px;
 			top: 90px;
 			width: 200px;
 			height: fit-content;
 			flex-direction: column;
-			padding: 24px;
+			padding: 32px;
 			border-radius: 10px;
 			transform: translateX(250px);
 			box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075),

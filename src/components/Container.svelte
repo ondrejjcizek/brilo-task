@@ -16,7 +16,7 @@
 
 		//Up to phone landscape - up to 767px
 		@include down('md') {
-			padding: 0 12px;
+			padding: 0 24px;
 		}
 
 		&.regular {

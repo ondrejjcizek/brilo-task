@@ -1,6 +1,4 @@
 <script lang="ts">
-	//
-
 	import Card from '../components/Card.svelte';
 	import CardWrapper from '../components/CardWrapper.svelte';
 	import Container from '../components/Container.svelte';

@@ -3,9 +3,8 @@
 	import Header from '../components/Header.svelte';
 </script>
 
-<Header />
-
 <main>
+	<Header />
 	<slot />
 </main>
 
@@ -13,5 +12,6 @@
 	main {
 		background: var(--primary-bg);
 		height: 100%;
+		overflow: hidden;
 	}
 </style>
