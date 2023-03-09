@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<div class="Navigation">
+	<div class="Header-background">
 		<Container>
 			<Header />
 		</Container>
@@ -18,11 +18,12 @@
 		background: var(--background-bg);
 		height: 100%;
 		width: 100%;
-		bakground: red;
 		overflow: hidden;
 	}
 
-	.Navigation {
-		background: var(--header-bg);
+	.Header {
+		&-background {
+			background: var(--header-bg);
+		}
 	}
 </style>

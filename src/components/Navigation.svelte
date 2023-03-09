@@ -71,7 +71,7 @@
 				0 16px 16px hsl(0deg 0% 0% / 0.075);
 		}
 		&.active {
-			transform: translateX(0px);
+			transform: translateX(24px);
 		}
 
 		@include up('md') {
@@ -105,7 +105,9 @@
 		}
 
 		@include up('md') {
-			font-weight: bold;
+			@media (prefers-color-scheme: dark) {
+				font-weight: bold;
+			}
 		}
 
 		&:hover {
