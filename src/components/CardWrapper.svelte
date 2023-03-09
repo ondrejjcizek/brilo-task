@@ -18,7 +18,11 @@
 
 		@include down('sm') {
 			grid-template-columns: repeat(1, 1fr);
-			gap: 24px;
+			gap: 36px;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			border: 0.5px solid rgba(white, 0.5);
 		}
 	}
 </style>

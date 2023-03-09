@@ -12,6 +12,8 @@
 	main {
 		background: var(--primary-bg);
 		height: 100%;
+		width: 100%;
+		bakground: red;
 		overflow: hidden;
 	}
 </style>

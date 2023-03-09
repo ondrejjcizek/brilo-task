@@ -11,16 +11,20 @@
 		position: relative;
 		height: 100%;
 		margin: 0 auto;
-		padding: 0 24px;
+		padding: 0 36px;
 		box-sizing: content-box;
 
 		//Up to phone landscape - up to 767px
-		@include down('md') {
+		@include up('md') {
 			padding: 0 24px;
 		}
 
 		&.regular {
-			max-width: 1100px;
+			max-width: 325px;
+
+			@include up('md') {
+				max-width: 1100px;
+			}
 		}
 	}
 </style>

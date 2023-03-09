@@ -33,6 +33,13 @@
 		flex-direction: column;
 		background: var(--card-bg);
 		text-decoration: none;
+		border-radius: 10px;
+		box-shadow: 0 1px 3px rgb(0 34 54 / 7%), 0 2px 6px rgb(0 34 54 / 7%);
+
+		@media (prefers-color-scheme: dark) {
+			border-radius: 0px;
+			box-shadow: none;
+		}
 
 		&:hover {
 			@include up('sm') {
@@ -66,11 +73,23 @@
 			&:after {
 				position: absolute;
 				inset: 0;
-				top: -4px;
+				top: 0px;
 				content: '';
 				display: block;
-				border: 0.5px solid rgba(white, 0.5);
-				margin: 12px 16px;
+				border: 1px solid var(--card-border);
+				margin: 24px;
+				border-radius: 10px 10px 0 0;
+
+				@media (prefers-color-scheme: dark) {
+					top: 4px;
+					border: 0.5px solid rgba(white, 0.5);
+				}
+
+				@media (prefers-color-scheme: dark) {
+					top: -4px;
+					border-radius: 0;
+					margin: 12px 16px;
+				}
 			}
 
 			img {
@@ -79,19 +98,36 @@
 				opacity: 0.8;
 				object-fit: cover;
 				transition: ease opacity 0.3s;
+				border-radius: 10px 10px 0 0;
+
+				@media (prefers-color-scheme: dark) {
+					border-radius: 0px;
+				}
 			}
 		}
 
 		&-content {
-			padding: 32px 16px;
+			padding: 32px 24px;
 			transition: ease transform 0.3s;
+
+			@media (prefers-color-scheme: dark) {
+				padding: 32px 17px;
+			}
 
 			:global(h3) {
 				color: var(--card-title-color);
+
+				@media (prefers-color-scheme: dark) {
+					color: rgb(255, 255, 255, 0.8);
+				}
 			}
 
 			:global(p) {
 				color: var(--card-text-color);
+
+				@media (prefers-color-scheme: dark) {
+					color: rgb(255, 255, 255, 0.8);
+				}
 			}
 		}
 	}

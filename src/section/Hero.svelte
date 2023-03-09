@@ -54,9 +54,12 @@
 			}
 
 			@include down('md') {
-				margin: -80px auto 0;
+				margin: -93px auto 0;
 				text-align: center;
 
+				@include up('md') {
+					margin: -80px auto 0;
+				}
 				:global(h1) {
 					display: flex;
 					justify-content: center;
@@ -65,13 +68,20 @@
 					text-align: center;
 					max-width: 250px;
 					margin: 0 auto 40px;
-					background: rgba(white, 0.35);
+					background: rgba(white, 0.2);
+					border-radius: 10px;
+					@media (prefers-color-scheme: dark) {
+						border-radius: 0px;
+					}
 				}
 
 				:global(p) {
 					text-align: center;
 					margin-bottom: 32px;
-					padding: 0 24px;
+
+					@include down('sm') {
+						max-width: 315px;
+					}
 				}
 			}
 		}
@@ -82,6 +92,7 @@
 			width: 100%;
 			min-width: 315px;
 			max-width: 315px;
+
 			img {
 				position: absolute;
 				inset: 0;
@@ -89,6 +100,15 @@
 				object-fit: cover;
 				height: 100%;
 				width: 100%;
+				border-radius: 10px;
+				box-shadow: 0 1px 3px rgb(0 34 54 / 7%), 0 2px 6px rgb(0 34 54 / 7%);
+				@media (prefers-color-scheme: dark) {
+					border-radius: 0px;
+				}
+
+				@include down('sm') {
+					transform: scaleX(-1);
+				}
 			}
 
 			&:after {

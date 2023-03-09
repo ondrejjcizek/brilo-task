@@ -51,6 +51,11 @@
 		@include down('md') {
 			font-size: 2.4rem;
 			line-height: 24px;
+			margin-bottom: 36px;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			color: rgb(255, 255, 255, 0.8);
 		}
 	}
 
@@ -61,6 +66,10 @@
 
 		@include down('md') {
 			font-size: 3rem;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			color: rgb(255, 255, 255, 0.8);
 		}
 	}
 

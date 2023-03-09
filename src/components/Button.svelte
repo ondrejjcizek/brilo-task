@@ -48,6 +48,18 @@
 		border: 0;
 		color: var(--primary-btn-color);
 		background: var(--primary-btn-bg);
+		border-radius: 10px;
+		padding: 16px;
+		box-shadow: 0 1px 3px rgb(0 34 54 / 7%), 0 2px 6px rgb(0 34 54 / 7%);
+		@media (prefers-color-scheme: dark) {
+			box-shadow: none;
+			border-radius: 0px;
+			padding: 10px;
+		}
+
+		@include down('md') {
+			max-width: 315px;
+		}
 
 		&:hover {
 			background: var(--primary-btn-bg-hover);

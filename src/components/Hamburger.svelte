@@ -53,7 +53,6 @@
 
 		&.active {
 			pointer-events: none;
-			position: relative;
 
 			.Hamburger-stick {
 				&:nth-child(1) {
