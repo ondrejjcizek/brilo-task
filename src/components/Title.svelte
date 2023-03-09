@@ -29,17 +29,22 @@
 		font-size: 2.1rem;
 		margin-bottom: 24px;
 
-		@include down('lg') {
-			font-size: 1.8rem;
+		@include down('sm') {
+			margin-bottom: 12px;
 		}
 
 		@include down('md') {
+			display: block;
 			font-size: 1.8rem;
 			margin-bottom: 16px;
 		}
 
-		@include down('sm') {
-			margin-bottom: 12px;
+		@include up('md') {
+			height: 42px;
+		}
+
+		@include down('lg') {
+			font-size: 1.8rem;
 		}
 	}
 

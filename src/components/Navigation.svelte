@@ -22,12 +22,22 @@
 	nav {
 		display: flex;
 		align-items: center;
+		justify-content: flex-end;
 		position: absolute;
 		right: 20px;
 		top: 50%;
 		transform: translateY(-50%);
 		height: 100%;
 		z-index: 1;
+		min-width: 100%;
+		right: 0;
+
+		@include up('sm') {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	ul {
@@ -55,15 +65,13 @@
 			flex-direction: column;
 			padding: 32px;
 			border-radius: 10px;
-			transform: translateX(250px);
+			transform: translateX(340px);
 			box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075),
 				0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075),
 				0 16px 16px hsl(0deg 0% 0% / 0.075);
 		}
 		&.active {
-			@include down('sm') {
-				transform: translateX(0);
-			}
+			transform: translateX(0px);
 		}
 
 		@include up('md') {
@@ -86,6 +94,7 @@
 		height: 100%;
 		transition: ease color 0.3s, ease text-decoration 0.3s;
 		text-underline-offset: 8px;
+		white-space: nowrap;
 
 		@media (prefers-color-scheme: dark) {
 			font-weight: 400;

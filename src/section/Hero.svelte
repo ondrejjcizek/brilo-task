@@ -44,6 +44,7 @@
 		&-content {
 			margin-top: 48px;
 			max-width: 550px;
+			flex-shrink: 2;
 
 			:global(p) {
 				margin-bottom: 52px;
@@ -90,8 +91,8 @@
 			position: relative;
 			height: 422.5px;
 			width: 100%;
-			min-width: 315px;
 			max-width: 315px;
+			flex-grow: 0;
 
 			img {
 				position: absolute;

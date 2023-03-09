@@ -15,7 +15,6 @@
 <style lang="scss">
 	header {
 		position: relative;
-		background: var(--header-bg);
 		height: 72px;
 	}
 </style>

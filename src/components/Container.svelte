@@ -20,7 +20,7 @@
 		}
 
 		&.regular {
-			max-width: 325px;
+			max-width: 375px;
 
 			@include up('md') {
 				max-width: 1100px;
